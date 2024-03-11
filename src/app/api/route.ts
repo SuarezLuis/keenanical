@@ -12,10 +12,10 @@ export const POST = async (req: Request) => {
       command = "Use as many fancy and complicated words to say: ";
       break;
     case "dekennanicalize":
-      command = "Use the simplest language to say: ";
+      command = "Use the simplest and shortest language to say: ";
       break;
     default:
-      command = "Use as many fancy words to say: ";
+      command = "Use as many fancy and complicated words to say: ";
   }
 
   const completion = await openai.chat.completions.create({
