@@ -1,12 +1,12 @@
 "use client";
 import { Title, Flex, Button, Textarea } from "@mantine/core";
-import { TextareaAutosize } from "@mui/base/TextareaAutosize";
 
-import SwapVertTwoToneIcon from "@mui/icons-material/SwapVertTwoTone";
+import North from "@mui/icons-material/North";
+import South from "@mui/icons-material/South";
 import { useState } from "react";
 
 export default function Home() {
-  const [makingSense, setMakingSense] = useState(true);
+  const [makingSense, setMakingSense] = useState(false);
   const [sense, setSense] = useState("");
   const [nonsense, setNonsense] = useState("");
 
@@ -47,10 +47,9 @@ export default function Home() {
             minRows={3}
             maxRows={5}
             autosize
-            disabled={!makingSense}
-            placeholder="Place nonsense here..."
-            value={nonsense}
-            onChange={(e) => setNonsense(e.target.value)}
+            placeholder="Plain english goes here..."
+            value={sense}
+            onChange={(e) => setSense(e.target.value)}
           />
           <Flex style={{ margin: "20px" }}>
             <Button onClick={handleKeenanicalize}>
@@ -58,19 +57,17 @@ export default function Home() {
             </Button>
             &nbsp;
             <Button onClick={handleSwap}>
-              <SwapVertTwoToneIcon />
+              {makingSense ? <North /> : <South />}
             </Button>
           </Flex>
-
           <Textarea
             cols={60}
             minRows={3}
             maxRows={5}
             autosize
-            disabled={makingSense}
-            placeholder="Plain english will populate here..."
-            value={sense}
-            onChange={(e) => setSense(e.target.value)}
+            placeholder="Place nonsense here..."
+            value={nonsense}
+            onChange={(e) => setNonsense(e.target.value)}
           />
         </Flex>
       </Flex>
