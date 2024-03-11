@@ -1,5 +1,5 @@
 "use client";
-import { Title, Flex, Button, Textarea } from "@mantine/core";
+import { Title, Flex, Button, Textarea, Text } from "@mantine/core";
 
 import North from "@mui/icons-material/North";
 import South from "@mui/icons-material/South";
@@ -35,6 +35,19 @@ export default function Home() {
       <Flex direction="column" justify="center" align={"center"}>
         <Title>Keenanical</Title>
         <Title style={{ fontStyle: "italic" }}>(kee-nan-i-kal)</Title>
+        <Text style={{ width: "40vw", marginTop: "15px" }}>
+          Are you tired of not understanding that coworker that is the
+          incarnation of a dictionary?{" "}
+        </Text>
+        <Text style={{ width: "40vw", marginTop: "15px" }}>
+          Are fancy words getting in the way of your daily workflow?
+        </Text>
+        <Text style={{ width: "40vw", marginTop: "15px" }}>
+          Look no further... introducing Keenanical, an AI powered defancy-fier
+          and fancy-fier to ease communications with "Those who find themselves
+          compelled to articulate in ornate and grandiloquent verbiage sans
+          necessity."
+        </Text>
         <Flex
           justify="center"
           align="center"
