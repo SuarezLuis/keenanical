@@ -44,9 +44,9 @@ export default function Home() {
         </Text>
         <Text style={{ width: "40vw", marginTop: "15px" }}>
           Look no further... introducing Keenanical, an AI powered defancy-fier
-          and fancy-fier to ease communications with "Those who find themselves
-          compelled to articulate in ornate and grandiloquent verbiage sans
-          necessity."
+          and fancy-fier to ease communications with &quot;Those who find
+          themselves compelled to articulate in ornate and grandiloquent
+          verbiage sans necessity.&quot;
         </Text>
         <Flex
           justify="center"
